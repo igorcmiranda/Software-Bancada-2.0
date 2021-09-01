@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A804D6B1-5670-47AD-8680-9440A71FFED6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ajustador_Calibrador_ADR3000</RootNamespace>
+    <AssemblyName>Ajustador_Calibrador_ADR3000</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Frontal-ADR-3000-rev1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="InTheHand.Net.Personal">
+      <HintPath>Packages\32feet.NET.3.5.0.0\lib\net\InTheHand.Net.Personal.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>Packages\iTextSharp.5.5.9\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleIO-M-dotNet4">
+      <HintPath>bin\Debug\lib_MCP2200\SimpleIO-M-dotNet4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Devices\ACP300.cs" />
+    <Compile Include="Devices\ADR3000.cs" />
+    <Compile Include="Devices\ADR2000.cs" />
+    <Compile Include="Devices\PowerSupply.cs" />
+    <Compile Include="Devices\StandardMeter.cs" />
+    <Compile Include="Devices\Transformer5Out.cs" />
+    <Compile Include="Forms\frAdjust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frAdjust.Designer.cs">
+      <DependentUpon>frAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frCalibration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frCalibration.Designer.cs">
+      <DependentUpon>frCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frCustomer.Designer.cs">
+      <DependentUpon>frCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frLogin.Designer.cs">
+      <DependentUpon>frLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frMain.Designer.cs">
+      <DependentUpon>frMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frMCP2200RelayTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frMCP2200RelayTest.Designer.cs">
+      <DependentUpon>frMCP2200RelayTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frReport.Designer.cs">
+      <DependentUpon>frReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frShowInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frShowInfo.Designer.cs">
+      <DependentUpon>frShowInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frSourceControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frSourceControl.Designer.cs">
+      <DependentUpon>frSourceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frVoltage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frVoltage.Designer.cs">
+      <DependentUpon>frVoltage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ACPCommand.cs" />
+    <Compile Include="Helpers\Answer.cs" />
+    <Compile Include="Helpers\CalibrationPoint.cs" />
+    <Compile Include="Helpers\Delegates.cs" />
+    <Compile Include="Helpers\Enumerators.cs" />
+    <Compile Include="Helpers\MSAccess.cs" />
+    <Compile Include="Helpers\ReportGenerator.cs" />
+    <Compile Include="Helpers\ReportHelper.cs" />
+    <Compile Include="Helpers\SerialPortReader.cs" />
+    <Compile Include="Program\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frAdjust.resx">
+      <DependentUpon>frAdjust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frCalibration.resx">
+      <DependentUpon>frCalibration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frCustomer.resx">
+      <DependentUpon>frCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frLogin.resx">
+      <DependentUpon>frLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frMain.resx">
+      <DependentUpon>frMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frMCP2200RelayTest.resx">
+      <DependentUpon>frMCP2200RelayTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frReport.resx">
+      <DependentUpon>frReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frShowInfo.resx">
+      <DependentUpon>frShowInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frSourceControl.resx">
+      <DependentUpon>frSourceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frVoltage.resx">
+      <DependentUpon>frVoltage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Frontal-ADR-3000-rev1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
