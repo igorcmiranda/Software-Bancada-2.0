@@ -38,6 +38,18 @@
             this.lbUser = new System.Windows.Forms.Label();
             this.pnLogo = new System.Windows.Forms.Panel();
             this.msMain = new System.Windows.Forms.MenuStrip();
+            this.ajustesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDE9000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDR4000LITEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDR5000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.processoMulti4000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.multifaixasADR5000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDR30002000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calibraçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDE9000ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDRMulti4000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDR5000ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDR30002000ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sourceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.varivoltToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,18 +64,6 @@
             this.rMM3006ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gF333BToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testStdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calibraçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDE9000ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDRMulti4000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDR5000ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDR30002000ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajustesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDE9000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDR4000LITEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDR5000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.processoMulti4000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.multifaixasADR5000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDR30002000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adicionarADRMESAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tlConnections = new System.Windows.Forms.ToolStripMenuItem();
             this.tlStartServer = new System.Windows.Forms.ToolStripMenuItem();
@@ -90,6 +90,10 @@
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tmTimerHour = new System.Windows.Forms.Timer(this.components);
+            this.usuárioAssinaturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parâmetrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDR30002000ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnMain.SuspendLayout();
             this.gbUserInfo.SuspendLayout();
             this.msMain.SuspendLayout();
@@ -176,12 +180,101 @@
             this.quantidadeDeToolStripMenuItem,
             this.testeMESAToolStripMenuItem,
             this.relatóriosToolStripMenuItem,
-            this.clientesToolStripMenuItem});
+            this.clientesToolStripMenuItem,
+            this.usuárioAssinaturasToolStripMenuItem,
+            this.parâmetrosToolStripMenuItem});
             this.msMain.Location = new System.Drawing.Point(0, 0);
             this.msMain.Name = "msMain";
-            this.msMain.Size = new System.Drawing.Size(1313, 28);
+            this.msMain.Size = new System.Drawing.Size(1428, 28);
             this.msMain.TabIndex = 0;
             this.msMain.Text = "menuStrip1";
+            // 
+            // ajustesToolStripMenuItem
+            // 
+            this.ajustesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aDE9000ToolStripMenuItem,
+            this.aDR4000LITEToolStripMenuItem,
+            this.aDR5000ToolStripMenuItem,
+            this.aDR30002000ToolStripMenuItem});
+            this.ajustesToolStripMenuItem.Name = "ajustesToolStripMenuItem";
+            this.ajustesToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
+            this.ajustesToolStripMenuItem.Text = "Ajustes >";
+            // 
+            // aDE9000ToolStripMenuItem
+            // 
+            this.aDE9000ToolStripMenuItem.Name = "aDE9000ToolStripMenuItem";
+            this.aDE9000ToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.aDE9000ToolStripMenuItem.Text = "ADE 9000";
+            // 
+            // aDR4000LITEToolStripMenuItem
+            // 
+            this.aDR4000LITEToolStripMenuItem.Name = "aDR4000LITEToolStripMenuItem";
+            this.aDR4000LITEToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.aDR4000LITEToolStripMenuItem.Text = "ADR 4000 LITE";
+            // 
+            // aDR5000ToolStripMenuItem
+            // 
+            this.aDR5000ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.processoMulti4000ToolStripMenuItem,
+            this.multifaixasADR5000ToolStripMenuItem});
+            this.aDR5000ToolStripMenuItem.Name = "aDR5000ToolStripMenuItem";
+            this.aDR5000ToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.aDR5000ToolStripMenuItem.Text = "ADR 5000";
+            // 
+            // processoMulti4000ToolStripMenuItem
+            // 
+            this.processoMulti4000ToolStripMenuItem.Name = "processoMulti4000ToolStripMenuItem";
+            this.processoMulti4000ToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
+            this.processoMulti4000ToolStripMenuItem.Text = "Processo Multi 4000";
+            // 
+            // multifaixasADR5000ToolStripMenuItem
+            // 
+            this.multifaixasADR5000ToolStripMenuItem.Name = "multifaixasADR5000ToolStripMenuItem";
+            this.multifaixasADR5000ToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
+            this.multifaixasADR5000ToolStripMenuItem.Text = "Multifaixas ADR 5000";
+            // 
+            // aDR30002000ToolStripMenuItem
+            // 
+            this.aDR30002000ToolStripMenuItem.Name = "aDR30002000ToolStripMenuItem";
+            this.aDR30002000ToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.aDR30002000ToolStripMenuItem.Text = "ADR 3000 / 2000";
+            this.aDR30002000ToolStripMenuItem.Click += new System.EventHandler(this.ADR30002000ToolStripMenuItem_Click);
+            // 
+            // calibraçãoToolStripMenuItem
+            // 
+            this.calibraçãoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aDE9000ToolStripMenuItem1,
+            this.aDRMulti4000ToolStripMenuItem,
+            this.aDR5000ToolStripMenuItem1,
+            this.aDR30002000ToolStripMenuItem1});
+            this.calibraçãoToolStripMenuItem.Name = "calibraçãoToolStripMenuItem";
+            this.calibraçãoToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
+            this.calibraçãoToolStripMenuItem.Text = "Calibração >";
+            // 
+            // aDE9000ToolStripMenuItem1
+            // 
+            this.aDE9000ToolStripMenuItem1.Name = "aDE9000ToolStripMenuItem1";
+            this.aDE9000ToolStripMenuItem1.Size = new System.Drawing.Size(190, 24);
+            this.aDE9000ToolStripMenuItem1.Text = "ADE 9000";
+            // 
+            // aDRMulti4000ToolStripMenuItem
+            // 
+            this.aDRMulti4000ToolStripMenuItem.Name = "aDRMulti4000ToolStripMenuItem";
+            this.aDRMulti4000ToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.aDRMulti4000ToolStripMenuItem.Text = "ADR Multi 4000";
+            // 
+            // aDR5000ToolStripMenuItem1
+            // 
+            this.aDR5000ToolStripMenuItem1.Name = "aDR5000ToolStripMenuItem1";
+            this.aDR5000ToolStripMenuItem1.Size = new System.Drawing.Size(190, 24);
+            this.aDR5000ToolStripMenuItem1.Text = "ADR 5000";
+            // 
+            // aDR30002000ToolStripMenuItem1
+            // 
+            this.aDR30002000ToolStripMenuItem1.Name = "aDR30002000ToolStripMenuItem1";
+            this.aDR30002000ToolStripMenuItem1.Size = new System.Drawing.Size(190, 24);
+            this.aDR30002000ToolStripMenuItem1.Text = "ADR 3000 / 2000";
+            this.aDR30002000ToolStripMenuItem1.Click += new System.EventHandler(this.ADR30002000ToolStripMenuItem1_Click);
             // 
             // menuToolStripMenuItem
             // 
@@ -293,93 +386,6 @@
             this.testStdToolStripMenuItem.Size = new System.Drawing.Size(147, 24);
             this.testStdToolStripMenuItem.Text = "Testar";
             this.testStdToolStripMenuItem.Click += new System.EventHandler(this.TestStdToolStripMenuItem_Click);
-            // 
-            // calibraçãoToolStripMenuItem
-            // 
-            this.calibraçãoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aDE9000ToolStripMenuItem1,
-            this.aDRMulti4000ToolStripMenuItem,
-            this.aDR5000ToolStripMenuItem1,
-            this.aDR30002000ToolStripMenuItem1});
-            this.calibraçãoToolStripMenuItem.Name = "calibraçãoToolStripMenuItem";
-            this.calibraçãoToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
-            this.calibraçãoToolStripMenuItem.Text = "Calibração >";
-            // 
-            // aDE9000ToolStripMenuItem1
-            // 
-            this.aDE9000ToolStripMenuItem1.Name = "aDE9000ToolStripMenuItem1";
-            this.aDE9000ToolStripMenuItem1.Size = new System.Drawing.Size(190, 24);
-            this.aDE9000ToolStripMenuItem1.Text = "ADE 9000";
-            // 
-            // aDRMulti4000ToolStripMenuItem
-            // 
-            this.aDRMulti4000ToolStripMenuItem.Name = "aDRMulti4000ToolStripMenuItem";
-            this.aDRMulti4000ToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
-            this.aDRMulti4000ToolStripMenuItem.Text = "ADR Multi 4000";
-            // 
-            // aDR5000ToolStripMenuItem1
-            // 
-            this.aDR5000ToolStripMenuItem1.Name = "aDR5000ToolStripMenuItem1";
-            this.aDR5000ToolStripMenuItem1.Size = new System.Drawing.Size(190, 24);
-            this.aDR5000ToolStripMenuItem1.Text = "ADR 5000";
-            // 
-            // aDR30002000ToolStripMenuItem1
-            // 
-            this.aDR30002000ToolStripMenuItem1.Name = "aDR30002000ToolStripMenuItem1";
-            this.aDR30002000ToolStripMenuItem1.Size = new System.Drawing.Size(190, 24);
-            this.aDR30002000ToolStripMenuItem1.Text = "ADR 3000 / 2000";
-            this.aDR30002000ToolStripMenuItem1.Click += new System.EventHandler(this.ADR30002000ToolStripMenuItem1_Click);
-            // 
-            // ajustesToolStripMenuItem
-            // 
-            this.ajustesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aDE9000ToolStripMenuItem,
-            this.aDR4000LITEToolStripMenuItem,
-            this.aDR5000ToolStripMenuItem,
-            this.aDR30002000ToolStripMenuItem});
-            this.ajustesToolStripMenuItem.Name = "ajustesToolStripMenuItem";
-            this.ajustesToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
-            this.ajustesToolStripMenuItem.Text = "Ajustes >";
-            // 
-            // aDE9000ToolStripMenuItem
-            // 
-            this.aDE9000ToolStripMenuItem.Name = "aDE9000ToolStripMenuItem";
-            this.aDE9000ToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
-            this.aDE9000ToolStripMenuItem.Text = "ADE 9000";
-            // 
-            // aDR4000LITEToolStripMenuItem
-            // 
-            this.aDR4000LITEToolStripMenuItem.Name = "aDR4000LITEToolStripMenuItem";
-            this.aDR4000LITEToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
-            this.aDR4000LITEToolStripMenuItem.Text = "ADR 4000 LITE";
-            // 
-            // aDR5000ToolStripMenuItem
-            // 
-            this.aDR5000ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.processoMulti4000ToolStripMenuItem,
-            this.multifaixasADR5000ToolStripMenuItem});
-            this.aDR5000ToolStripMenuItem.Name = "aDR5000ToolStripMenuItem";
-            this.aDR5000ToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
-            this.aDR5000ToolStripMenuItem.Text = "ADR 5000";
-            // 
-            // processoMulti4000ToolStripMenuItem
-            // 
-            this.processoMulti4000ToolStripMenuItem.Name = "processoMulti4000ToolStripMenuItem";
-            this.processoMulti4000ToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
-            this.processoMulti4000ToolStripMenuItem.Text = "Processo Multi 4000";
-            // 
-            // multifaixasADR5000ToolStripMenuItem
-            // 
-            this.multifaixasADR5000ToolStripMenuItem.Name = "multifaixasADR5000ToolStripMenuItem";
-            this.multifaixasADR5000ToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
-            this.multifaixasADR5000ToolStripMenuItem.Text = "Multifaixas ADR 5000";
-            // 
-            // aDR30002000ToolStripMenuItem
-            // 
-            this.aDR30002000ToolStripMenuItem.Name = "aDR30002000ToolStripMenuItem";
-            this.aDR30002000ToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
-            this.aDR30002000ToolStripMenuItem.Text = "ADR 3000 / 2000";
-            this.aDR30002000ToolStripMenuItem.Click += new System.EventHandler(this.ADR30002000ToolStripMenuItem_Click);
             // 
             // adicionarADRMESAToolStripMenuItem
             // 
@@ -565,12 +571,39 @@
             this.tmTimerHour.Interval = 1000;
             this.tmTimerHour.Tick += new System.EventHandler(this.TmTimerHour_Tick);
             // 
+            // usuárioAssinaturasToolStripMenuItem
+            // 
+            this.usuárioAssinaturasToolStripMenuItem.Name = "usuárioAssinaturasToolStripMenuItem";
+            this.usuárioAssinaturasToolStripMenuItem.Size = new System.Drawing.Size(155, 24);
+            this.usuárioAssinaturasToolStripMenuItem.Text = "Usuário/ Assinaturas";
+            // 
+            // parâmetrosToolStripMenuItem
+            // 
+            this.parâmetrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aDRToolStripMenuItem,
+            this.aDR30002000ToolStripMenuItem2});
+            this.parâmetrosToolStripMenuItem.Name = "parâmetrosToolStripMenuItem";
+            this.parâmetrosToolStripMenuItem.Size = new System.Drawing.Size(109, 24);
+            this.parâmetrosToolStripMenuItem.Text = "Parâmetros >";
+            // 
+            // aDRToolStripMenuItem
+            // 
+            this.aDRToolStripMenuItem.Name = "aDRToolStripMenuItem";
+            this.aDRToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+            this.aDRToolStripMenuItem.Text = "ADR 4000/ 5000";
+            // 
+            // aDR30002000ToolStripMenuItem2
+            // 
+            this.aDR30002000ToolStripMenuItem2.Name = "aDR30002000ToolStripMenuItem2";
+            this.aDR30002000ToolStripMenuItem2.Size = new System.Drawing.Size(186, 24);
+            this.aDR30002000ToolStripMenuItem2.Text = "ADR 3000/ 2000";
+            // 
             // frMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1313, 489);
+            this.ClientSize = new System.Drawing.Size(1428, 489);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.msMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -654,6 +687,10 @@
         private System.Windows.Forms.ToolStripMenuItem testeMESAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuárioAssinaturasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem parâmetrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aDRToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aDR30002000ToolStripMenuItem2;
     }
 }
 
