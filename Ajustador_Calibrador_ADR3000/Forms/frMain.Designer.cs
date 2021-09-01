@@ -231,7 +231,7 @@
             this.transformer5OutputsToolStripMenuItem.Name = "transformer5OutputsToolStripMenuItem";
             this.transformer5OutputsToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.transformer5OutputsToolStripMenuItem.Text = "Trafo 5 saídas";
-            this.transformer5OutputsToolStripMenuItem.Click += new System.EventHandler(this.transformer5OutputsToolStripMenuItem_Click);
+            this.transformer5OutputsToolStripMenuItem.Click += new System.EventHandler(this.Transformer5OutputsToolStripMenuItem_Click);
             // 
             // configurarToolStripMenuItem
             // 
@@ -245,7 +245,7 @@
             this.testTransformer5OutputsToolStripMenuItem.Name = "testTransformer5OutputsToolStripMenuItem";
             this.testTransformer5OutputsToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.testTransformer5OutputsToolStripMenuItem.Text = "Testar trafo 5 saídas";
-            this.testTransformer5OutputsToolStripMenuItem.Click += new System.EventHandler(this.testTransformer5OutputsToolStripMenuItem_Click);
+            this.testTransformer5OutputsToolStripMenuItem.Click += new System.EventHandler(this.TestTransformer5OutputsToolStripMenuItem_Click);
             // 
             // padrãoDeEnergiaToolStripMenuItem
             // 
@@ -285,14 +285,14 @@
             this.gF333BToolStripMenuItem.Name = "gF333BToolStripMenuItem";
             this.gF333BToolStripMenuItem.Size = new System.Drawing.Size(147, 24);
             this.gF333BToolStripMenuItem.Text = "GF333B";
-            this.gF333BToolStripMenuItem.Click += new System.EventHandler(this.gF333BToolStripMenuItem_Click);
+            this.gF333BToolStripMenuItem.Click += new System.EventHandler(this.GF333BToolStripMenuItem_Click);
             // 
             // testStdToolStripMenuItem
             // 
             this.testStdToolStripMenuItem.Name = "testStdToolStripMenuItem";
             this.testStdToolStripMenuItem.Size = new System.Drawing.Size(147, 24);
             this.testStdToolStripMenuItem.Text = "Testar";
-            this.testStdToolStripMenuItem.Click += new System.EventHandler(this.testStdToolStripMenuItem_Click);
+            this.testStdToolStripMenuItem.Click += new System.EventHandler(this.TestStdToolStripMenuItem_Click);
             // 
             // calibraçãoToolStripMenuItem
             // 
@@ -328,7 +328,7 @@
             this.aDR30002000ToolStripMenuItem1.Name = "aDR30002000ToolStripMenuItem1";
             this.aDR30002000ToolStripMenuItem1.Size = new System.Drawing.Size(190, 24);
             this.aDR30002000ToolStripMenuItem1.Text = "ADR 3000 / 2000";
-            this.aDR30002000ToolStripMenuItem1.Click += new System.EventHandler(this.aDR30002000ToolStripMenuItem1_Click);
+            this.aDR30002000ToolStripMenuItem1.Click += new System.EventHandler(this.ADR30002000ToolStripMenuItem1_Click);
             // 
             // ajustesToolStripMenuItem
             // 
@@ -379,7 +379,7 @@
             this.aDR30002000ToolStripMenuItem.Name = "aDR30002000ToolStripMenuItem";
             this.aDR30002000ToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
             this.aDR30002000ToolStripMenuItem.Text = "ADR 3000 / 2000";
-            this.aDR30002000ToolStripMenuItem.Click += new System.EventHandler(this.aDR30002000ToolStripMenuItem_Click);
+            this.aDR30002000ToolStripMenuItem.Click += new System.EventHandler(this.ADR30002000ToolStripMenuItem_Click);
             // 
             // adicionarADRMESAToolStripMenuItem
             // 
@@ -551,19 +551,19 @@
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
             this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
-            this.relatóriosToolStripMenuItem.Click += new System.EventHandler(this.relatóriosToolStripMenuItem_Click_1);
+            this.relatóriosToolStripMenuItem.Click += new System.EventHandler(this.RelatóriosToolStripMenuItem_Click_1);
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.clientesToolStripMenuItem.Text = "Clientes";
-            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.ClientesToolStripMenuItem_Click);
             // 
             // tmTimerHour
             // 
             this.tmTimerHour.Interval = 1000;
-            this.tmTimerHour.Tick += new System.EventHandler(this.tmTimerHour_Tick);
+            this.tmTimerHour.Tick += new System.EventHandler(this.TmTimerHour_Tick);
             // 
             // frMain
             // 
@@ -578,9 +578,9 @@
             this.Name = "frMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajustador e Calibrador ADR 3000 1.6.0";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frMain_FormClosing);
-            this.Load += new System.EventHandler(this.frMain_Load);
-            this.SizeChanged += new System.EventHandler(this.frMain_SizeChanged);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrMain_FormClosing);
+            this.Load += new System.EventHandler(this.FrMain_Load);
+            this.SizeChanged += new System.EventHandler(this.FrMain_SizeChanged);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrMain_KeyDown);
             this.pnMain.ResumeLayout(false);
             this.gbUserInfo.ResumeLayout(false);

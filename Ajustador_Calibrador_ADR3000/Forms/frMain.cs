@@ -52,7 +52,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
         /// </summary>
         /// <param name="sender">Event caller.</param>
         /// <param name="e">Argument for the event</param>
-        private void frMain_Load(object sender, EventArgs e)
+        private void FrMain_Load(object sender, EventArgs e)
         {
             //MessageBox.Show("Ganho de tensão: " + ADR2000.EE_CHV1 + Environment.NewLine + 
             //    "Ganho de corrente: " + ADR2000.EE_CHC1_0 + Environment.NewLine + 
@@ -140,7 +140,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
         /// </summary>
         /// <param name="sender">Event caller.</param>
         /// <param name="e">Argument for the event</param>
-        private void frMain_SizeChanged(object sender, EventArgs e)
+        private void FrMain_SizeChanged(object sender, EventArgs e)
         {
             CenterControlInParent(pnMain);
         }
@@ -150,7 +150,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
         /// </summary>
         /// <param name="sender">Event caller.</param>
         /// <param name="e">Arguments to the event.</param>
-        private void frMain_FormClosing(object sender, FormClosingEventArgs e)
+        private void FrMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (!closingFromCode)
             {
@@ -192,7 +192,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
         /// </summary>
         /// <param name="sender">The event caller.</param>
         /// <param name="e">Argument for the event.</param>
-        private void tmTimerHour_Tick(object sender, EventArgs e)
+        private void TmTimerHour_Tick(object sender, EventArgs e)
         {
             lbHour2.Text = DateTime.Now.ToString("hh:mm:ss");
         }
@@ -202,7 +202,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
         /// </summary>
         /// <param name="sender">The event caller.</param>
         /// <param name="e">Argument for the event.</param>
-        private void reportsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ReportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<frReport>().Count() == 0) new frReport(connectionString).Show();
             else Application.OpenForms.OfType<frReport>().FirstOrDefault().Activate();
@@ -213,7 +213,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
         /// </summary>
         /// <param name="sender">The event caller.</param>
         /// <param name="e">Argument for the event.</param>
-        private void customersToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CustomersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<frCustomer>().Count() == 0) new frCustomer(connectionString).Show();
             else Application.OpenForms.OfType<frCustomer>().FirstOrDefault().Activate();
@@ -445,7 +445,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
             sourceType = _ACP300;
         }
 
-        private void gF333BToolStripMenuItem_Click(object sender, EventArgs e)
+        private void GF333BToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MSAccess db = new MSAccess(connectionString);
 
@@ -471,7 +471,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
             standardType = StandardMeter.StandardType.GF333B;
         }
 
-        private void testStdToolStripMenuItem_Click(object sender, EventArgs e)
+        private void TestStdToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<frShowInfo>().Count() > 0)
                 Application.OpenForms.OfType<frShowInfo>().FirstOrDefault().Activate();
@@ -479,7 +479,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
                 new frShowInfo(standardType).Show();   
         }
 
-        private void transformer5OutputsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Transformer5OutputsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MSAccess db = new MSAccess(connectionString);
 
@@ -504,19 +504,14 @@ namespace Ajustador_Calibrador_ADR3000.Forms
             sourceType = _5_OUTPUTS_TRANSFORMER;
         }
 
-        private void testTransformer5OutputsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void TestTransformer5OutputsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frMCP2200RelayTest testForm = new frMCP2200RelayTest(connectionString);
             testForm.ShowDialog();
             testForm.Dispose();
         }
 
-        private void relatóriosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void aDR30002000ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ADR30002000ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<frCalibration>().Count() > 0)
             {
@@ -529,7 +524,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
             }
         }
 
-        private void aDR30002000ToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void ADR30002000ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<frAdjust>().Count() > 0)
             {
@@ -542,17 +537,12 @@ namespace Ajustador_Calibrador_ADR3000.Forms
             }
         }
 
-        private void aDRToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         /// <summary>
         /// Event triggered when the item named Relatórios of the menu strip is clicked.
         /// </summary>
         /// <param name="sender">The event caller.</param>
         /// <param name="e">Argument for the event.</param>
-        private void relatóriosToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void RelatóriosToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<frReport>().Count() == 0) new frReport(connectionString).Show();
             else Application.OpenForms.OfType<frReport>().FirstOrDefault().Activate();
@@ -563,7 +553,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
         /// </summary>
         /// <param name="sender">The event caller.</param>
         /// <param name="e">Argument for the event.</param>
-        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<frCustomer>().Count() == 0) new frCustomer(connectionString).Show();
             else Application.OpenForms.OfType<frCustomer>().FirstOrDefault().Activate();
