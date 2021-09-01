@@ -558,5 +558,15 @@ namespace Ajustador_Calibrador_ADR3000.Forms
             if (Application.OpenForms.OfType<frCustomer>().Count() == 0) new frCustomer(connectionString).Show();
             else Application.OpenForms.OfType<frCustomer>().FirstOrDefault().Activate();
         }
+
+        private void parâmetrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<frConfig>().Count() != 0) Application.OpenForms.OfType<frConfig>().FirstOrDefault().Activate();
+            else
+            {
+                frConfig config = new frConfig();
+                config.Show();
+            }
+        }
     }
 }

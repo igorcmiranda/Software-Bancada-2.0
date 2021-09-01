@@ -589,6 +589,7 @@
             this.parâmetrosToolStripMenuItem.Name = "parâmetrosToolStripMenuItem";
             this.parâmetrosToolStripMenuItem.Size = new System.Drawing.Size(212, 24);
             this.parâmetrosToolStripMenuItem.Text = "Parâmetros";
+            this.parâmetrosToolStripMenuItem.Click += new System.EventHandler(this.parâmetrosToolStripMenuItem_Click);
             // 
             // frMain
             // 
