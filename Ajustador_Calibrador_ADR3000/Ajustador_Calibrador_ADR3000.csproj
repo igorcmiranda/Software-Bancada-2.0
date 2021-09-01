@@ -88,6 +88,12 @@
     <Compile Include="Devices\PowerSupply.cs" />
     <Compile Include="Devices\StandardMeter.cs" />
     <Compile Include="Devices\Transformer5Out.cs" />
+    <Compile Include="Forms\frConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frConfig.Designer.cs">
+      <DependentUpon>frConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frAdjust.cs">
       <SubType>Form</SubType>
     </Compile>

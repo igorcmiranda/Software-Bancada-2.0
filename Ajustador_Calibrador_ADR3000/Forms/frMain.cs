@@ -11,6 +11,7 @@ using System.IO;
 using ADODB;
 using Ajustador_Calibrador_ADR3000.Helpers;
 using Ajustador_Calibrador_ADR3000.Devices;
+using CalibradorMulti4000_Mesa.Forms;
 
 namespace Ajustador_Calibrador_ADR3000.Forms
 {
@@ -557,6 +558,21 @@ namespace Ajustador_Calibrador_ADR3000.Forms
         {
             if (Application.OpenForms.OfType<frCustomer>().Count() == 0) new frCustomer(connectionString).Show();
             else Application.OpenForms.OfType<frCustomer>().FirstOrDefault().Activate();
+        }
+
+        private void aDR30002000ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<frConfig>().Count() != 0) Application.OpenForms.OfType<frConfig>().FirstOrDefault().Activate();
+            else
+            {
+                frConfig config = new frConfig();
+                config.Show();
+            }
+        }
+
+        private void parâmetrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

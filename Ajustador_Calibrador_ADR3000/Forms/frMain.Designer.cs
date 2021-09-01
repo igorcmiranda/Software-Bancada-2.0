@@ -585,6 +585,7 @@
             this.parâmetrosToolStripMenuItem.Name = "parâmetrosToolStripMenuItem";
             this.parâmetrosToolStripMenuItem.Size = new System.Drawing.Size(109, 24);
             this.parâmetrosToolStripMenuItem.Text = "Parâmetros >";
+            this.parâmetrosToolStripMenuItem.Click += new System.EventHandler(this.parâmetrosToolStripMenuItem_Click);
             // 
             // aDRToolStripMenuItem
             // 
@@ -597,6 +598,7 @@
             this.aDR30002000ToolStripMenuItem2.Name = "aDR30002000ToolStripMenuItem2";
             this.aDR30002000ToolStripMenuItem2.Size = new System.Drawing.Size(186, 24);
             this.aDR30002000ToolStripMenuItem2.Text = "ADR 3000/ 2000";
+            this.aDR30002000ToolStripMenuItem2.Click += new System.EventHandler(this.aDR30002000ToolStripMenuItem2_Click);
             // 
             // frMain
             // 
