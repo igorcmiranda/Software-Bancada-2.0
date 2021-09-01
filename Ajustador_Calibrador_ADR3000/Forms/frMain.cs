@@ -230,7 +230,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
                 db.CloseConnection();
                 db.Dispose();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 db.Dispose();
@@ -336,7 +336,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
 
         private void CalibracaoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void FrMain_KeyDown(object sender, KeyEventArgs e)
@@ -382,7 +382,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
 
         private void ConfigurarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if ((Application.OpenForms.OfType<frAdjust>().Count() > 0)||
+            if ((Application.OpenForms.OfType<frAdjust>().Count() > 0) ||
                 (Application.OpenForms.OfType<frCalibration>().Count() > 0))
             {
                 MessageBox.Show("Não é permitido configurar a fonte com formulários de ajuste ou calibração abertos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -476,7 +476,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
             if (Application.OpenForms.OfType<frShowInfo>().Count() > 0)
                 Application.OpenForms.OfType<frShowInfo>().FirstOrDefault().Activate();
             else
-                new frShowInfo(standardType).Show();   
+                new frShowInfo(standardType).Show();
         }
 
         private void Transformer5OutputsToolStripMenuItem_Click(object sender, EventArgs e)

@@ -90,10 +90,9 @@
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tmTimerHour = new System.Windows.Forms.Timer(this.components);
-            this.usuárioAssinaturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuárioSenhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parâmetrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDR30002000ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnMain.SuspendLayout();
             this.gbUserInfo.SuspendLayout();
             this.msMain.SuspendLayout();
@@ -181,11 +180,10 @@
             this.testeMESAToolStripMenuItem,
             this.relatóriosToolStripMenuItem,
             this.clientesToolStripMenuItem,
-            this.usuárioAssinaturasToolStripMenuItem,
-            this.parâmetrosToolStripMenuItem});
+            this.dadosToolStripMenuItem});
             this.msMain.Location = new System.Drawing.Point(0, 0);
             this.msMain.Name = "msMain";
-            this.msMain.Size = new System.Drawing.Size(1428, 28);
+            this.msMain.Size = new System.Drawing.Size(1313, 28);
             this.msMain.TabIndex = 0;
             this.msMain.Text = "menuStrip1";
             // 
@@ -489,61 +487,61 @@
             // aDRToolStripMenuItem1
             // 
             this.aDRToolStripMenuItem1.Name = "aDRToolStripMenuItem1";
-            this.aDRToolStripMenuItem1.Size = new System.Drawing.Size(134, 24);
+            this.aDRToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
             this.aDRToolStripMenuItem1.Text = "1 ADR";
             // 
             // aDRsToolStripMenuItem
             // 
             this.aDRsToolStripMenuItem.Name = "aDRsToolStripMenuItem";
-            this.aDRsToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
+            this.aDRsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.aDRsToolStripMenuItem.Text = "2 ADRs";
             // 
             // aDRsToolStripMenuItem1
             // 
             this.aDRsToolStripMenuItem1.Name = "aDRsToolStripMenuItem1";
-            this.aDRsToolStripMenuItem1.Size = new System.Drawing.Size(134, 24);
+            this.aDRsToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
             this.aDRsToolStripMenuItem1.Text = "3 ADRs";
             // 
             // aDRsToolStripMenuItem2
             // 
             this.aDRsToolStripMenuItem2.Name = "aDRsToolStripMenuItem2";
-            this.aDRsToolStripMenuItem2.Size = new System.Drawing.Size(134, 24);
+            this.aDRsToolStripMenuItem2.Size = new System.Drawing.Size(180, 24);
             this.aDRsToolStripMenuItem2.Text = "4 ADRs";
             // 
             // aDRsToolStripMenuItem3
             // 
             this.aDRsToolStripMenuItem3.Name = "aDRsToolStripMenuItem3";
-            this.aDRsToolStripMenuItem3.Size = new System.Drawing.Size(134, 24);
+            this.aDRsToolStripMenuItem3.Size = new System.Drawing.Size(180, 24);
             this.aDRsToolStripMenuItem3.Text = "5 ADRs";
             // 
             // aDRsToolStripMenuItem4
             // 
             this.aDRsToolStripMenuItem4.Name = "aDRsToolStripMenuItem4";
-            this.aDRsToolStripMenuItem4.Size = new System.Drawing.Size(134, 24);
+            this.aDRsToolStripMenuItem4.Size = new System.Drawing.Size(180, 24);
             this.aDRsToolStripMenuItem4.Text = "6 ADRs";
             // 
             // aDRsToolStripMenuItem5
             // 
             this.aDRsToolStripMenuItem5.Name = "aDRsToolStripMenuItem5";
-            this.aDRsToolStripMenuItem5.Size = new System.Drawing.Size(134, 24);
+            this.aDRsToolStripMenuItem5.Size = new System.Drawing.Size(180, 24);
             this.aDRsToolStripMenuItem5.Text = "7 ADRs";
             // 
             // aDRsToolStripMenuItem6
             // 
             this.aDRsToolStripMenuItem6.Name = "aDRsToolStripMenuItem6";
-            this.aDRsToolStripMenuItem6.Size = new System.Drawing.Size(134, 24);
+            this.aDRsToolStripMenuItem6.Size = new System.Drawing.Size(180, 24);
             this.aDRsToolStripMenuItem6.Text = "8 ADRs";
             // 
             // aDRsToolStripMenuItem7
             // 
             this.aDRsToolStripMenuItem7.Name = "aDRsToolStripMenuItem7";
-            this.aDRsToolStripMenuItem7.Size = new System.Drawing.Size(134, 24);
+            this.aDRsToolStripMenuItem7.Size = new System.Drawing.Size(180, 24);
             this.aDRsToolStripMenuItem7.Text = "9 ADRs";
             // 
             // aDRsToolStripMenuItem8
             // 
             this.aDRsToolStripMenuItem8.Name = "aDRsToolStripMenuItem8";
-            this.aDRsToolStripMenuItem8.Size = new System.Drawing.Size(134, 24);
+            this.aDRsToolStripMenuItem8.Size = new System.Drawing.Size(180, 24);
             this.aDRsToolStripMenuItem8.Text = "10 ADRs";
             // 
             // testeMESAToolStripMenuItem
@@ -571,39 +569,33 @@
             this.tmTimerHour.Interval = 1000;
             this.tmTimerHour.Tick += new System.EventHandler(this.TmTimerHour_Tick);
             // 
-            // usuárioAssinaturasToolStripMenuItem
+            // dadosToolStripMenuItem
             // 
-            this.usuárioAssinaturasToolStripMenuItem.Name = "usuárioAssinaturasToolStripMenuItem";
-            this.usuárioAssinaturasToolStripMenuItem.Size = new System.Drawing.Size(155, 24);
-            this.usuárioAssinaturasToolStripMenuItem.Text = "Usuário/ Assinaturas";
+            this.dadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usuárioSenhaToolStripMenuItem,
+            this.parâmetrosToolStripMenuItem});
+            this.dadosToolStripMenuItem.Name = "dadosToolStripMenuItem";
+            this.dadosToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.dadosToolStripMenuItem.Text = "Dados >";
+            // 
+            // usuárioSenhaToolStripMenuItem
+            // 
+            this.usuárioSenhaToolStripMenuItem.Name = "usuárioSenhaToolStripMenuItem";
+            this.usuárioSenhaToolStripMenuItem.Size = new System.Drawing.Size(212, 24);
+            this.usuárioSenhaToolStripMenuItem.Text = "Usuário/ Assinaturas";
             // 
             // parâmetrosToolStripMenuItem
             // 
-            this.parâmetrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aDRToolStripMenuItem,
-            this.aDR30002000ToolStripMenuItem2});
             this.parâmetrosToolStripMenuItem.Name = "parâmetrosToolStripMenuItem";
-            this.parâmetrosToolStripMenuItem.Size = new System.Drawing.Size(109, 24);
-            this.parâmetrosToolStripMenuItem.Text = "Parâmetros >";
-            // 
-            // aDRToolStripMenuItem
-            // 
-            this.aDRToolStripMenuItem.Name = "aDRToolStripMenuItem";
-            this.aDRToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
-            this.aDRToolStripMenuItem.Text = "ADR 4000/ 5000";
-            // 
-            // aDR30002000ToolStripMenuItem2
-            // 
-            this.aDR30002000ToolStripMenuItem2.Name = "aDR30002000ToolStripMenuItem2";
-            this.aDR30002000ToolStripMenuItem2.Size = new System.Drawing.Size(186, 24);
-            this.aDR30002000ToolStripMenuItem2.Text = "ADR 3000/ 2000";
+            this.parâmetrosToolStripMenuItem.Size = new System.Drawing.Size(212, 24);
+            this.parâmetrosToolStripMenuItem.Text = "Parâmetros";
             // 
             // frMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1428, 489);
+            this.ClientSize = new System.Drawing.Size(1313, 489);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.msMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -687,10 +679,8 @@
         private System.Windows.Forms.ToolStripMenuItem testeMESAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usuárioAssinaturasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuárioSenhaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem parâmetrosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aDRToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aDR30002000ToolStripMenuItem2;
     }
 }
-

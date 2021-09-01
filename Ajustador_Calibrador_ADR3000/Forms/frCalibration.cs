@@ -2741,7 +2741,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
         }
 
         private void FrCalibration_Load(object sender, EventArgs e)
-        {
+        {/*
             BluetoothDeviceInfo[] deviceInfos = new BluetoothClient().DiscoverDevices(255, true, false, false, false);
 
             foreach (BluetoothDeviceInfo deviceInfo in deviceInfos)
@@ -2800,7 +2800,7 @@ namespace Ajustador_Calibrador_ADR3000.Forms
 
             backgroundWorker.DoWork += new DoWorkEventHandler(DoWork);
             backgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(RunWorkerCompleted);
-            backgroundWorker.WorkerSupportsCancellation = true;
+            backgroundWorker.WorkerSupportsCancellation = true;*/
         }
 
         private void CbEssay_SelectedIndexChanged(object sender, EventArgs e)
